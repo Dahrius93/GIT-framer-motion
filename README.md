@@ -1,4 +1,4 @@
-#Progetto ReactJS 
+# Progetto ReactJS 
 
 progetto pagina web pizzeria per fare pratica con:
 - ReactJS
