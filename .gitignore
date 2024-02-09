@@ -1,1 +1,27 @@
 node_modules
+# Dipendenze
+/node_modules/
+
+# File di build
+/build/
+/dist/
+
+# File di configurazione locali
+/.env
+/.env.local
+
+# File di sistema macOS
+.DS_Store
+
+# File di sistema Windows
+Thumbs.db
+ehthumbs.db
+
+# File di sistema Linux
+.*~
+
+# Editor directories and files
+.idea/
+*.swp
+*.swo
+.vscode/
