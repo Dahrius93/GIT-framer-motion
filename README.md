@@ -6,7 +6,7 @@ A modern, animated pizza ordering application built with React, featuring smooth
 ![Framer Motion](https://img.shields.io/badge/Framer%20Motion-1.10.3-purple.svg)
 ![React Router](https://img.shields.io/badge/React%20Router-5.1.2-red.svg)
 
-[deploy progetto su questo link]()
+[deploy progetto su questo link](https://pizza-order-motion.netlify.app/)
 
 ## ✨ Features
 
