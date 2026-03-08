@@ -3,5 +3,5 @@
   publish = "build"
 
 [build.environment]
-  NODE_OPTIONS = "--openssl-legacy-provider"
+  NODE_OPTIONS= npm install && NODE_OPTIONS= npm run build
   NODE_VERSION = "16"
