@@ -1,0 +1,16 @@
+[build]
+  command = "npm run build"
+  publish = "build"
+
+[build.environment]
+  NODE_OPTIONS = "--openssl-legacy-provider"
+  NODE_VERSION = "16"
+```
+
+---
+
+**Soluzione 2 — fissa la versione di Node a 16 (consigliata)**
+
+Crea un file `.nvmrc` nella root:
+```
+16

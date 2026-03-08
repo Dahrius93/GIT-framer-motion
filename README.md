@@ -6,6 +6,8 @@ A modern, animated pizza ordering application built with React, featuring smooth
 ![Framer Motion](https://img.shields.io/badge/Framer%20Motion-1.10.3-purple.svg)
 ![React Router](https://img.shields.io/badge/React%20Router-5.1.2-red.svg)
 
+[Guarda il deploy su Netlify]()
+
 ## ✨ Features
 
 - **Interactive Pizza Builder**: Customize your pizza with different bases and toppings
@@ -31,12 +33,14 @@ Before running this project, make sure you have the following installed:
 ## 🛠️ Installation
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/your-username/ninja-joint.git
    cd ninja-joint
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install
    # or
@@ -44,6 +48,7 @@ Before running this project, make sure you have the following installed:
    ```
 
 3. **Start the development server**
+
    ```bash
    npm start
    # or
