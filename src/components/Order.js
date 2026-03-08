@@ -1,44 +1,43 @@
-import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { useEffect } from "react";
+import { motion } from "framer-motion";
 
 const containerVariants = {
   hidden: {
     opacity: 0,
-    x: '100vw'
+    x: "100vw",
   },
-  visible : {
+  visible: {
     opacity: 1,
     x: 0,
     transition: {
-      type: 'spring', 
+      type: "spring",
       //delay: 0.5,
       mass: 0.4,
       damping: 8,
       when: "beforeChildren", // animazione viene eseguita prima dell'animazione del figlio
-      staggerChildren: 0.5
-    }
+      staggerChildren: 0.5,
+    },
   },
   exit: {
-    x: '-100vw',
-    transition: { ease: 'easeInOut' }
-  }
-}
+    x: "-100vw",
+    transition: { ease: "easeInOut" },
+  },
+};
 const childVariants = {
   hidden: {
-    opacity: 0
+    opacity: 0,
   },
   visible: {
-    opacity: 1
-  }
-}
-
+    opacity: 1,
+  },
+};
 
 const Order = ({ pizza, setShowModal }) => {
   useEffect(() => {
     setTimeout(() => {
       setShowModal(true); // imposto showModal a true dopo 5 secondi
-    }, 5000)
-  }, [setShowModal])
+    }, 5000);
+  }, [setShowModal]);
 
   /* rimozione del messaggio di ringraziamento dopo 4 secondi
   const [showTitle, setShowTitle] = useState(true);
@@ -48,21 +47,25 @@ const Order = ({ pizza, setShowModal }) => {
   */
 
   return (
-    <motion.div className="container order"
+    <motion.div
+      className="container order"
       variants={containerVariants}
       initial="hidden"
       animate="visible"
-      exit='exit'
+      exit="exit"
     >
       <h2>Thank you for your order :)</h2>
-      <motion.p variants={ childVariants }>You ordered a { pizza.base } pizza with:</motion.p>
-      <motion.div variants={ childVariants }>
-        {pizza.toppings.map(topping => <div key={topping}>{topping}</div>)}
+      <motion.p variants={childVariants}>
+        You ordered a {pizza.base} pizza with:
+      </motion.p>
+      <motion.div variants={childVariants}>
+        {pizza.toppings.map((topping) => (
+          <div key={topping}>{topping}</div>
+        ))}
       </motion.div>
-
     </motion.div>
-  )
-}
+  );
+};
 
 export default Order;
 
